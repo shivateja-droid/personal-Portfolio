@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body id="body1">
+
+    <div id="loader">
+        <div id="loader-num">
+            <h1>0%</h1>
+        </div>
+        <div id="loader-text">
+            <h1>Loading...</h1>
+            
+        </div>
+    </div>
+
+    <div class="cursor">
+    </div>
+
+    
+
+    <div class="main-page" style="display: none;" >
+      <div class="nav">
+      <div class="nav-icon">
+        <i class="fa-solid fa-list" onclick="toggleNav()"></i>
+      </div>
+
+      <div class="nav-links">
+        <li class="link"><a href="#" id="link1">Home</a></li>
+        <li id="link1" class="link"><a href="#About" id="link1">About</a></li>
+        <li id="link1" class="link"><a href="#Skills" id="link1">Skills</a></li>
+        <li id="link1" class="link">
+          <a href="#Projects" id="link1">Projects</a>
+        </li>
+        <li id="link1" class="link">
+          <a href="#Certificates" id="link1">Certifications</a>
+        </li>
+        <li id="link1" class="link">
+          <a href="#contact-me" id="link1">Contact</a>
+        </li>
+      </div>
+
+      <div id="themeIcon" onclick="ThemeChanger()">
+          <i class="fa-solid fa-moon"></i>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="page1">
+        <header class="container">
+          <div class="content">
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <h1 id="names">
+              Hi, I'm <span>Aryajeet Jha</span>, passionate about <br />
+              <div id="typedcontent"></div>
+            </h1>
+            <p>A passionate developer based in Lucknow, India 📍.</p>
+            <a onclick="window.open('./profile.pdf')" download class="btn"
+              >View Resume</a
+            >
+            <!-- <button class="btn" download>Download Resume</button> -->
+          </div>
+          <div class="image">
+            <!-- <img class="img" src="Face.jpg" /> -->
+          </div>
+        </header>
+      </div>
+      <div class="page3">
+        <div class="About" id="About">
+          <div class="left-about">
+            <span class="blur"></span>
+            <h1>About</h1>
+            <img src="About.jpg" alt="" />
+          </div>
+          <div class="right-about">
+            <p>
+              Passionate and dedicated undergraduate student at VIT Vellore,
+              pursuing a BTech in Computer Science and Engineering with a
+              specialization in Internet of Things (IoT), currently in 2nd year
+              as of 2024. With a strong foundation in programming languages like
+              C/C++, Python, and Java, coupled with my proficiency in Frontend
+              Development, my journey has been characterized by an unwavering
+              commitment to continuous learning, innovative problem-solving, and
+              the ability to transform ideas into practical solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="page2" id="Skills">
+        <h3>Skills</h3>
+        <div class="left-skills">
+          <div class="left-skill">
+            <li><h1 onclick="toggleAnim()">C</h1>
+            <span class="left-bar"><span class="C"></span></span>
+            </li>
+            <li><h1 onclick="toggleAnimCpp()">C++</h1>
+              <span class="left-bar"><span class="Cpp"></span></span>
+            </li>
+            <li><h1 onclick="toggleAnimJava()">Java</h1>
+              <span class="left-bar"><span class="Java"></span></span>
+            </li>
+            <li><h1>Python</h1>
+              <span class="left-bar"><span class="Python"></span></span>
+            </li>
+            <li><h1>R</h1>
+              <span class="left-bar"><span class="R"></span></span>
+            </li>
+          </div>
+        </div>
+        <div class="right-skills">
+          <div class="right-skill">
+            <li><h1>HTML</h1>
+            <span class="right-bar"><span class="HTML"></span></span>
+            </li>
+            <li><h1>CSS</h1>
+              <span class="right-bar"><span class="CSS"></span></span>
+            </li>
+            <li><h1>JS</h1>
+              <span class="right-bar"><span class="JS"></span></span>
+            </li>
+            <li><h1>MERN</h1>
+              <span class="right-bar"><span class="MERN"></span></span>
+            </li>
+            <li><h1>ML</h1>
+              <span class="right-bar"><span class="ML"></span></span>
+            </li>
+          </div>
+        </div>
+      </div>
+
+
+        
+      <div class="page4" id="Projects">
+        <span class="blur" id="below_blur"></span>
+        <h1>Projects</h1>
+        <div class="projects">
+          <div class="to-do">
+            <a href="https://todolist-umber-omega.vercel.app/">
+              <img src="To-do.jpg" alt="" />
+              <div class="overlay">
+                <div class="text">View Demo</div>
+              </div>
+            </a>
+
+            <div class="to-do-desc">
+              <h3>To-do List</h3>
+              <p>
+                A dynamic To-Do List offering functionalities to effortlessly
+                create, modify, and remove tasks.
+              </p>
+            </div>
+          </div>
+          <div class="tic-tac-toe">
+            <div class="tic-tac-toe-desc">
+              <h3>Tic-Tac-Toe</h3>
+              <p>
+                Embark on a dynamic Tic Tac Toe adventure with this HTML, CSS,
+                and JS-powered game, offering a visually appealing and
+                user-friendly experience for classic Xs and Os battles.
+              </p>
+            </div>
+            <a href="https://aryajeet1364.github.io/tictactoe/">
+              <img src="Tic-Tac-Toe.jpg" alt="" />
+              <div class="overlay-tic">
+                <div class="text">View Demo</div>
+              </div>
+            </a>
+          </div>
+          <div class="e-commerce">
+            <a href="https://github.com/AryaJeet1364/To-Do">
+              <img src="E-commerce.jpg" alt="" />
+              <div class="overlay">
+                <div class="text">View GitHub Demo</div>
+              </div>
+            </a>
+            <div class="e-commerce-desc">
+              <h3>E-commerce Website</h3>
+              <p>
+                Dive into the world of online shopping with our E-Commerce
+                application. Seamlessly add items to your cart, adjust
+                quantities, delete selections, and proceed to make secure
+                purchases.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="page-6" id="Certificates">
+        <span class="blur" id="below_blur"></span>
+        <h1>Certifications</h1>
+        <div class="cert">
+          <div class="image-container">
+            <a href="https://www.coursera.org/verify/6V4SKWLR58AL">
+              <img src="UnsupervisedML.png" class="slide" id = "unsup" alt="" />
+              <div class="overlay-image-container">
+                  <div class="text-image-container">Click for Credentials</div>
+              </div>
+            </a>
+            <a href="https://www.coursera.org/verify/NCNSLUKCF7KJ" >
+              <img src="AdvancedAlgoML.png" class="slide" id = "adval" alt="">
+            </a>
+            <a href="https://www.coursera.org/verify/DRHK837AEKH3">
+              <img src="SupervisedML.png" class ="slide" id="sup" alt="">
+            </a>
+          </div>
+          <div class="navigate-image">
+            <i class="fa-solid fa-circle-arrow-left" onclick="goPrev()"></i>
+            <i class="fa-solid fa-circle-arrow-right" onclick="goNext()"></i>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="page5" id="contact-me">
+        <h1 class="sub-title">Get in Touch</h1>
+        <div class="container-page5">
+          <div class="row">
+            <div class="contact-left">
+              <p>
+                <i class="fa-solid fa-envelope"></i
+                ><a
+                  href="mailto:aryajeet.jha@gmail.com"
+                  style="color: white"
+                  id="Email"
+                  >aryajeet.jha@gmail.com</a
+                >
+              </p>
+              <div class="phone-num">
+                <div class="phone-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="scratch-container">
+                  <div class="scratch-card">
+                    <div class="phone">
+                      <p>+917905690107</p>
+                    </div>
+                  </div>
+                  <canvas id="scratch-card1"></canvas>
+                </div>
+              </div>
+              <div class="social-icons">
+                <a href="https://www.instagram.com/jha_aryajeet/"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="https://www.linkedin.com/in/aryajeet-jha/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="https://github.com/AryaJeet1364"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input
+                  type="text"
+                  id="Name"
+                  name="Name"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="Email"
+                  id="email"
+                  placeholder="Your Email"
+                  required
+                />
+                <textarea
+                  name="Message"
+                  id="Message"
+                  rows="6"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+                <button type="submit" class="btn">Submit</button>
+              </form>
+              <br />
+              <p id="msg"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="copyright">
+          Copyright © 2024, This page was coded by Aryajeet Jha
+        </div>
+        <div class="footer-msg">
+          Made with HTML, CSS and JS only
+          No frameworks or libraries used
+        </div>
+      </div>
+    </div>
+    </div>
+
+    
+
+    <div onclick="goToTop()" id="goToTopBtn" title="Go to top">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyKqV5BL1IB-EpJXBtwQDtcBpbYAMfH6sPlTWzjGQZdLrebu3DdYZRyokopncjWW8nP/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Your message has been sucessfully delivered !!";
+            setTimeout(() => {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
