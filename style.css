@@ -299,6 +299,11 @@ header .content p {
   font-size: 1.2vw;
 }
 
+.page2 .blur{
+  margin-left: 10vw;
+  margin-top: 5vw;
+}
+
 .left-skills,
 .right-skills {
   list-style: none;
@@ -589,6 +594,11 @@ header .content p {
   margin-left: 10vw;
   font-size: 3.1vw;
   margin-top: 4vw;
+}
+
+.page5 .blur{
+  margin-left: 10vw;
+  margin-top: 5vw;
 }
 
 .container-page5 {
