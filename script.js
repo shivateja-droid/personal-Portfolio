@@ -478,6 +478,7 @@ init();
 
 window.onscroll = function () {
   scrollFunction();
+  scrollFunctionChat();
 };
 
 function scrollFunction() {
@@ -623,4 +624,76 @@ const goNext = () => {
 function toggleNav() {
   var navLinks = document.querySelector(".nav-links");
   navLinks.classList.toggle("dropdown-active");
+}
+
+function scrollFunctionChat() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("chat-open-button").style.display = "block";
+  } else {
+    document.getElementById("chat-open-button").style.display = "none";
+  }
+}
+
+
+
+const responses = {
+  greeting: "Hello! How can I assist you today?",
+  about:
+    "I can provide information about Aryajeet Jha, the developer of this website. He is a second-year BTech student at VIT Vellore, specializing in IoT within Computer Science and Engineering. Proficient in C/C++, Python, Java, and Frontend Development. Known for dedication to learning and innovative problem-solving.",
+  skills:
+    "I can tell you about Aryajeet's skills and expertise. His skills lie in C, C++, Java, Python, HTML, CSS, JavaScript, MERN stack, and Machine Learning ",
+  projects: "Explore Aryajeet's projects showcased on this website.",
+  certification: "Explore Aryajeet's certificates in ML showcased on this website.",
+  contact:
+    "You can get in touch with Aryajeet via email at aryajeet.jha@gmail.com or through social media links provided on this website.",
+  default: "I'm sorry, I didn't understand that. Could you please rephrase?",
+};
+
+
+function generateResponse(input) {
+  input = input.toLowerCase().trim();
+  if (input.includes("hello")) {
+    return responses.greeting;
+  } else if (input.includes("about")) {
+    return responses.about;
+  } else if (input.includes("skills")) {
+    return responses.skills;
+  } else if (input.includes("certificates")) {
+    return responses.certification;
+  } else if (input.includes("projects")) {
+    return responses.projects;
+  } else if (input.includes("contact")) {
+    return responses.contact;
+  } else {
+    return responses.default;
+  }
+}
+
+
+function handleUserInput() {
+  const userInput = document.getElementById("chat-input").value;
+  const chatHistory = document.getElementById("chat-history");
+  const userMessage = userInput;
+  chatHistory.value += "You: " + userMessage + "\n";
+
+  const botResponse = generateResponse(userInput);
+  chatHistory.value += "Bot: " + botResponse + "\n";
+
+
+  chatHistory.scrollTop = chatHistory.scrollHeight;
+
+  document.getElementById("chat-input").value = "";
+}
+
+
+document.getElementById("chat-input").addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    handleUserInput();
+  }
+});
+
+function toggleChat() {
+  var chatContainer = document.getElementById("chat-container");
+  chatContainer.style.display =
+    chatContainer.style.display === "none" ? "block" : "none";
 }
