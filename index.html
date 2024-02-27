@@ -313,7 +313,12 @@
     </div>
     </div>
 
-    
+    <button id="chat-open-button" onclick="toggleChat(), scrollFunctionChat()">Chat</button>
+    <div id="chat-container">
+      <p style="color: black;">Make sure your text include following words: 'hello', 'about', 'skills', 'projects', 'certificates', 'contact'</p>
+      <input type="text" id="chat-input" placeholder="Type here..." />
+      <textarea id="chat-history" readonly placeholder="Chat history..." rows="5"></textarea>
+    </div>
 
     <div onclick="goToTop()" id="goToTopBtn" title="Go to top">
       <i class="fas fa-arrow-up"></i>
