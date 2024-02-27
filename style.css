@@ -917,7 +917,7 @@ form .btn {
   }
 
   .overlay-tic {
-    margin-left: 0vw;
+    margin-left: 15vw;
   }
 
   .to-do-desc,
@@ -1123,8 +1123,10 @@ form .btn {
 
   .overlay,
   .overlay-tic {
-    width: 50%;
-    height: 20vh;
+    width: 60%;
+    height: 35vh;
+    margin-left: 15vw;
+    margin-top: 6vw;
   }
 
   .contact-right {
