@@ -406,7 +406,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
 // Typewriter Effect
 
-const texts = ["Frontend Development", "UI/UX Design", "Machine Learning"];
+const texts = ["Frontend Development", "UI/UX Design", "Artificial Intelligence"];
 let index = 0;
 let subIndex = 0;
 let isDeleting = false;
