@@ -639,13 +639,13 @@ function scrollFunctionChat() {
 const responses = {
   greeting: "Hello! How can I assist you today?",
   about:
-    "I can provide information about Aryajeet Jha, the developer of this website. He is a second-year BTech student at VIT Vellore, specializing in IoT within Computer Science and Engineering. Proficient in C/C++, Python, Java, and Frontend Development. Known for dedication to learning and innovative problem-solving.",
+    "I can provide information about Shivateja, the developer of this website. He is Wanderer of the web, crafter of code. a digital sorcerer from NIT Jalandhar, conjuring clean UIs and weaving logic spells with JavaScript. Forever curious, ever-building, chasing bugs like dragons in the clouds.",
   skills:
-    "I can tell you about Aryajeet's skills and expertise. His skills lie in C, C++, Java, Python, HTML, CSS, JavaScript, MERN stack, and Machine Learning ",
-  projects: "Explore Aryajeet's projects showcased on this website.",
-  certification: "Explore Aryajeet's certificates in ML showcased on this website.",
+    "I can tell you about Shivateja's skills and expertise. He build bones with HTML, paint them pretty with CSS, and make them dance with JavaScript. He dig up secrets using SQL, tame logic dragons with Python, swing a classic C sword, and sharpen spells with C++ sparkles.",
+  projects: "Explore Shivateja's projects showcased on this website.",
+  certification: "Explore Shivateja's certificates showcased on this website.",
   contact:
-    "You can get in touch with Aryajeet via email at aryajeet.jha@gmail.com or through social media links provided on this website.",
+    "You can get in touch with Shivateja via email at pabbojushivateja404@gmail.com or through social media links provided on this website.",
   default: "I'm sorry, I didn't understand that. Could you please rephrase?",
 };
 
